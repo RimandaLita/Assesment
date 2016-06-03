@@ -1,0 +1,58 @@
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.internal.runners.statements.*;
+import junit.framework.*;
+
+import java.util.concurrent.TimeUnit;
+
+public class Herbal_tea_satu extends TestCase {
+	  private String baseUrl;
+	  private String email = "hi.rimanda@gmail.com";
+	  private String name = "html/body/div[1]/div/div[1]/div/div[1]/div/div/form/fieldset[1]/div[2]/div/input";
+	  private String address ="html/body/div[1]/div/div[1]/div/div[1]/div/div/form/fieldset[1]/div[3]/div/textarea";
+	  private String card_number = "html/body/div[1]/div/div[1]/div/div[1]/div/div/form/fieldset[2]/div[2]/div/input";
+	  private String cardholder_name = "html/body/div[1]/div/div[1]/div/div[1]/div/div/form/fieldset[2]/div[3]/div/input";
+	  private String verification_code ="html/body/div[1]/div/div[1]/div/div[1]/div/div/form/fieldset[2]/div[4]/div/input";
+	  private boolean acceptNextAlert = true;
+	  private StringBuffer verificationErrors = new StringBuffer();
+	  
+	@Test
+	
+	public void test() {
+		baseUrl = "http://www.practiceselenium.com/";
+//		fail("Not yet implemented");
+		clickLink("html/body/div[1]/div/div[1]/div/div[22]/div/a/span");
+		assertTitleEquals("html/body/div[1]/div/div[1]/div/div[1]/div/h1");
+		clickLink("html/body/div[1]/div/div[1]/div/div[16]/div/a/span");
+		setTextField("email", "hi.rimanda@gmail.com");
+        setTextField("name", "Rima");
+        setTextField("address", "Jakarta");
+        setTextField("card_number", "1");
+        setTextField("cardholder_name", "A");
+        setTextField("verification_code", "1");
+        submit();
+	}
+
+	private void submit() {
+		
+		
+	}
+
+	private void setTextField(String string, String string2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void assertTitleEquals(String string) {
+		
+		
+	}
+
+	private void clickLink(String string) {
+		
+		
+	}
+}

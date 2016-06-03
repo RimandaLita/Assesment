@@ -1,0 +1,25 @@
+import static org.junit.Assert.*;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.Test;
+
+
+
+import junit.framework.TestSuite;
+
+public class Welcome_page {
+	 
+	  private String baseUrl;
+	  private boolean acceptNextAlert = true;
+	  private StringBuffer verificationErrors = new StringBuffer();
+
+	@Test
+	public void test() {
+	    baseUrl = "http://www.practiceselenium.com/";
+//	    fail("Not yet implemented");
+	}
+	
+	
+
+}
